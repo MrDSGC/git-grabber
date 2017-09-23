@@ -1,0 +1,24 @@
+{
+  "name": "github-grabber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "animal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon animal.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDSGC/git-grabber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDSGC/git-grabber/issues"
+  },
+  "homepage": "https://github.com/MrDSGC/git-grabber#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

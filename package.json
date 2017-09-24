@@ -2,10 +2,10 @@
   "name": "github-grabber",
   "version": "1.0.0",
   "description": "",
-  "main": "animal.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon animal.js" 
+    "start": "nodemon git_grabber.js" 
   },
   "repository": {
     "type": "git",

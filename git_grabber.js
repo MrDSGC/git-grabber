@@ -10,7 +10,7 @@ const qs = require('querystring')
 //     res.end("Danger, not a POST request!");
 //   }
 // })
-  
+
 // const githubServer = http.createServer((req, res) => {
 //   if (req.method === 'POST') {
 //     let body = ''
@@ -45,6 +45,7 @@ const githubServer = http.createServer((req, res) => {
     req.on('data', chunk => {
       requestBody += chunk
     })
+    console.log(req);
     req.on('end', () => {
       const username = qs.parse(requestBody).username
       const ws = fs.createWriteStream(`./${username}_starred_repos.txt`)

@@ -40,12 +40,13 @@ function buildOptionsObj (username) {
 }
 
 const githubServer = http.createServer((req, res) => {
+  console.log(req);
   if (req.method === 'POST') {
     let requestBody = ''
     req.on('data', chunk => {
       requestBody += chunk
     })
-    console.log(req);
+    
     req.on('end', () => {
       const username = qs.parse(requestBody).username
       const ws = fs.createWriteStream(`./${username}_starred_repos.txt`)
